@@ -2,24 +2,24 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script src="https://imgsa.baidu.com/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=1c0ef74b7b8b4710da22f59ea2a7a898/0eb30f2442a7d9336e3aeb19a44bd11372f001cd.jpg">
+<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
 </script>
 <script>
 function afterText()
 {
-	var txt1="<b>我 </b>";                    // 使用 HTML 创建元素
-	var txt2=$("<i></i>").text("喜欢 ");     // 使用 jQuery 创建元素
-	var txt3=document.createElement("big");  // 使用 DOM 创建元素
-	txt3.innerHTML="腻腻";
-	$("img").after(txt1,txt2,txt3);          // 在图片后添加文本
+​var txt1="<b>我 </b>";                    // 使用 HTML 创建元素
+​var txt2=$("<i></i>").text("喜欢 ");     // 使用 jQuery 创建元素
+​var txt3=document.createElement("big");  // 使用 DOM 创建元素
+​txt3.innerHTML="腻腻";
+​$("img").after(txt1,txt2,txt3);          // 在图片后添加文本
 }
 </script>
 </head>
 <body>
-
-<img src="/statics/images/w3c/logo.png" >
+ 
+<img src="http://gb.cri.cn/mmsource/images/2012/06/15/87/5582780368477255503.jpg" >
 <br><br>
 <button onclick="afterText()">之后插入</button>
-
+ 
 </body>
 </html>
