@@ -5,21 +5,20 @@
 <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
 </script>
 <script>
-function afterText()
-{
-	var txt1="<b>我 </b>";                    // 使用 HTML 创建元素
-	var txt2=$("<i></i>").text("喜欢 ");     // 使用 jQuery 创建元素
-	var txt3=document.createElement("big");  // 使用 DOM 创建元素
-	txt3.innerHTML="腻腻";
-	$("img").after(txt1,txt2,txt3);          // 在图片后添加文本
-}
+$(document).ready(function(){
+ 
+
+  $("#btn2").click(function(){
+    $("img").after("<i>冯腻腻</i>");
+  });
+});
 </script>
 </head>
+
 <body>
-
-<img src="/statics/images/w3c/logo.png" >
+<img src="/statics/images/logo.png" >
 <br><br>
-<button onclick="afterText()">之后插入</button>
 
+<button id="btn2">之后插入</button>
 </body>
 </html>
